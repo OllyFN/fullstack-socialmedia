@@ -1,0 +1,13 @@
+#header {
+  height: var(--header-height);
+  position: sticky;
+  background: #111111;
+  z-index: 1;
+  top: 0px;
+  border-bottom: 2px solid white;
+  transition: top 0.2s ease-out;
+  color: white;
+  &[data-closed] {
+    top: calc(var(--header-height) * -1);
+  }
+}

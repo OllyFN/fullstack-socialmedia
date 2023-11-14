@@ -1,0 +1,28 @@
+.notifications-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.notification {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  position: relative;
+}
+.notification-image {
+  float: left;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.notification-title {
+  font-size: var(--font-size-xl);
+}
+.notification-description {
+  font-size: var(--font-size-sm);
+  white-space: wrap;
+}
+.notification-date {
+  bottom: 0;
+  color: gray;
+  font-size: var(--font-size-xs);
+}

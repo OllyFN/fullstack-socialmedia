@@ -1,0 +1,66 @@
+@import 'sanitize.css';
+
+:root {
+  --font-size-scaling: 0.5vw;
+
+  --font-size-xs: calc(0.75rem + var(--font-size-scaling));
+  --font-size-sm: calc(0.875rem + var(--font-size-scaling));
+  --font-size-md: calc(1rem + var(--font-size-scaling));
+  --font-size-lg: calc(1.125rem + var(--font-size-scaling));
+  --font-size-xl: calc(1.25rem + var(--font-size-scaling));
+
+  --line-height-xs: calc(1.25rem + var(--font-size-scaling));
+  --line-height-sm: calc(1.25rem + var(--font-size-scaling));
+  --line-height-md: calc(1.5rem + var(--font-size-scaling));
+  --line-height-lg: calc(1.75rem + var(--font-size-scaling));
+  --line-height-xl: calc(1.75rem + var(--font-size-scaling));
+
+  --header-height: 96px;
+}
+
+body {
+  background: #111111;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: solid white 2px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.no-select {
+  user-select: none;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.debug {
+  border: 3px solid red;
+}
+
+.page-nav-wrapper {
+  margin: 0;
+}
+
+.page-wrapper {
+  padding: 0 0 0 32px;
+  display: flex;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  gap: 32px;
+  width: 100%;
+  color: white;
+}

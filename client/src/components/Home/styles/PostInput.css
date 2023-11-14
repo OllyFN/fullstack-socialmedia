@@ -1,0 +1,71 @@
+.post-input-textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  min-height: calc(6rem+8px); /* 8px = padding top + padding bottom */
+  padding: 4px;
+  background: none;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  overflow: hidden;
+}
+
+.post-input-textarea-wrapper {
+  position: relative;
+}
+.post-input-char-counter {
+  pointer-events: none;
+  position: absolute;
+  color: white;
+  right: 8px;
+  bottom: 4px;
+  &[data-max-chars] {
+    color: #ff333a;
+  }
+}
+
+.post-input-user-wrapper {
+  width: 100%;
+  min-height: 64px;
+  margin-bottom: 16px;
+  color: white;
+  height: 1px;
+  img {
+    height: 100%;
+    border-radius: 16px;
+    float: left;
+  }
+}
+.post-input-user-data-wrapper {
+  display: inline-block;
+  margin-left: 8px;
+}
+.post-input-user-data-name {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-sm);
+}
+.post-input-user-data-tag {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  color: gray;
+}
+
+.post-input-send {
+  float: right;
+  font-size: var(--font-size-md);
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 8px 32px;
+  cursor: pointer;
+  transition: background 0.25s;
+  &:hover {
+    background: #ffffff33;
+  }
+  &:active {
+    background: #ffffff55;
+  }
+}

@@ -1,0 +1,7 @@
+.error-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}

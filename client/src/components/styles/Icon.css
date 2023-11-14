@@ -1,0 +1,25 @@
+.icon {
+  fill: white;
+}
+
+.icon-hoverable {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 32px;
+  transition: fill 0.25s;
+  &:hover {
+    fill: #ffffff55;
+  }
+}
+
+.icon-clickable {
+  cursor: pointer;
+  transition: fill 0.25s;
+  &:active {
+    fill: white;
+  }
+}
+
+.icon-filled {
+  fill: white !important;
+}

@@ -1,0 +1,45 @@
+.post-wrapper {
+  padding: 8px;
+  border: 2px solid white;
+  min-width: fit-content;
+  border-radius: 8px;
+  color: white;
+}
+
+.post-header {
+  display: flex;
+  gap: 8px;
+}
+
+.post-userpicture {
+  border-radius: 25%;
+  height: 64px;
+}
+
+.post-username {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+.post-content {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+.post-usertag {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: gray;
+}
+
+.post-likes {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+
+  height: var(--line-height-xs);
+
+  .icon {
+    margin-right: 8px;
+    height: 100%;
+  }
+}
